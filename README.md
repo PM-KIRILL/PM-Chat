@@ -29,13 +29,13 @@
 7. Запустите программу, выполнив команду `python3 main.py`.
 
 ### Скрипт Bash:
-Используйте этот скрипт, чтобы запустить Chatlink и запустить его в фоновом режиме. Для работы необходим установленный GNU Screen (`sudo apt install screen` в системах Debian).
+Используйте этот скрипт, чтобы запустить PM-Chat и запустить его в фоновом режиме. Для работы необходим установленный GNU Screen (`sudo apt install screen` в системах Debian).
 ```
 #!/bin/bash
 
 # Пример пути, здесь нужно изменить
-cd /home/allen/smp3/chatlink
-screen -dmS chatlink python3 main.py
+cd /root/pm-nodes/server
+screen -dmS pm-chat python3 main.py
 ```
 
 ### Список команд:
@@ -46,4 +46,5 @@ screen -dmS chatlink python3 main.py
 - `!motd (address) (port)` - Отображает MOTD сервера в виде изображения.
 - `!help` - Показывает сообщение со справкой.
 
-Примечание: Это было протестировано только в Linux.
+Примечание: Это было протестировано на хостингах PM-Nodes, CoreNodes и Deplos.
+Также стоит отметить что инструкция подразумевает использование VPS/VDS на Linux.
